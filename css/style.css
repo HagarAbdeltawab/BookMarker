@@ -1,0 +1,84 @@
+body{
+    background-color: #f7ecde;
+}
+h1{
+    font-family: Pacifico; 
+    font-size: 50px;
+}
+h1::after{
+    content: '';
+    height: 25%;
+    width: 100%; 
+    bottom: 10px;
+    left: 0;
+    z-index: -999;
+    background-color: #fec260;
+    position: absolute;
+    transition: height .5s ease-in;
+}
+h1:hover::after{
+    height: 50%;
+}
+.dotted-line {
+    border-bottom: 2px dotted #000; 
+    border-top: 2px dotted #000; 
+}
+h2{
+    font-family: Righteous;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input, label{
+    font-family: PT Sans Caption; 
+}
+
+.btn-submit{
+    background-color: #d1512d;
+}
+.btn-submit:hover{
+    background-color: #a03315;
+}
+
+th, td {
+    padding: 10px 0;   
+    text-align: center;
+}
+
+.btn-visit{
+    background-color: #9eb23b;
+}
+.btn-visit:hover{
+    background-color: #6e8018;
+}
+
+.box{
+    font-family: PT Sans Caption; 
+    font-size: 18px;
+    width: 500px;
+    z-index: 10;
+    top: 25%;
+    left: 30%;  
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    z-index: 10;
+}
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
